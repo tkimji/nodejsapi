@@ -1,9 +1,10 @@
+[[d1_databases]]
+binding = "DB"
+database_name = "dbtest"
+database_id = "d12e0083-6b69-423a-8132-6acc104e35ee"
 name = "my-worker"
 type = "javascript"
 compatibility_date = "2025-06-24"
 compatibility_flags = ["nodejs_compat"]
 
-[[d1_databases]]
-binding = "DB"
-database_name = "dbtest"
-database_id = "d12e0083-6b69-423a-8132-6acc104e35ee"
+
