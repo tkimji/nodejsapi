@@ -8,7 +8,9 @@ router.get('/api/hello', () => {
   })
 })
 
-router.get('/api/user/get', async  (env) => {
+router.get('/api/user/get', async  (request,env) => {
+
+  //console.log(env.DB)
   const { results } = await env.DB.prepare(
     'SELECT * FROM user '
   ).run()
