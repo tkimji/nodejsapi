@@ -10,7 +10,7 @@ router.get('/api/hello', () => {
 
 router.get('/api/user/get', async  (env) => {
   const { results } = await env.DB.prepare(
-    'SELECT name FROM users WHERE id = ?'
+    'SELECT * FROM user '
   ).bind(1).all();
 
   return Response.json(results);
