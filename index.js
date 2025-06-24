@@ -8,8 +8,17 @@ router.get('/api/hello', () => {
   })
 })
 
+router.get('/api/user/get', async  (env) => {
+  const { results } = await env.DB.prepare(
+    'SELECT name FROM users WHERE id = ?'
+  ).bind(1).all();
+
+  return Response.json(results);
+})
+
+
 router.all('*', () => new Response('Not found', { status: 404 }))
 
 export default {
-  fetch: (request) => router.handle(request)
+  fetch: (request, env, ctx) => router.handle(request, env, ctx)
 }
