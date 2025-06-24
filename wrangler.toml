@@ -1,4 +1,4 @@
-name = "my-worker"
+name = "userauthen9"
 main = "index.js"
 type = "javascript"
 compatibility_date = "2025-06-24"
