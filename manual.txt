@@ -1,0 +1,8 @@
+1 cd NodeJs_APIWithJWTToken
+2 npm install
+3 node server.js
+4. Open browser > typing localhost:3000 > display "Invalid Token"
+5 Open new tab  > typing http://localhost:3000/token?username=ton&password=1234
+6. copy token :"ey....." and swap browser No 4
+7. typing http://localhost:3000?token="ey..." from 6
+

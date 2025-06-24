@@ -1,0 +1,15 @@
+{
+    "TOKEN_KEY": "asdfowrewrewrwejdfsdfsdrer545464 ",
+    "URL": "http: //www.api.com",
+    "dbconfig": {
+        "server": "testtmlthdbs",
+        "database": "webapp",
+        "user": "appuser",
+        "password": "sysP@ss",
+        "options": {
+            "encrypt": false,
+            "trustServerCertificate": true
+        }
+
+    }
+}
